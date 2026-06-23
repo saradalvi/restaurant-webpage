@@ -19,7 +19,7 @@ A clean introduction detailing the brand philosophy, seamlessly followed by an i
 
 | 🏷️ About Our Story | 🎉 Special Events & Services |
 | :---: | :---: |
-| ![About Section](screenshots/2.png) | ![Services Section](screenshots/3.jpg) |
+| ![About Section](screenshots/2.png) | ![Services Section](screenshots/3.png) |
 
 ---
 
@@ -28,13 +28,13 @@ The dynamic menu features beautifully structured rows for breakfast, lunch, and 
 
 | 📜 Categorized Menu | 📅 Table Booking Form |
 | :---: | :---: |
-| ![Menu Section](screenshots/4.png) | ![Reservation Section](screenshots/5.jpg) |
+| ![Menu Section](screenshots/4.png) | ![Reservation Section](screenshots/5.png) |
 
 ---
 
 ### 👨‍🍳 Meet Our Culinary Team
 A uniform grid displaying the expert master chefs driving the restaurant's top-tier kitchen operations.
-![Chef Section](screenshots/6.jpg)
+![Chef Section](screenshots/6.png)
 
 ---
 
