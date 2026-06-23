@@ -1,4 +1,4 @@
-# StreetSupply Hub Restaurant Landing Page 🍽️
+#  Restaurant Landing Page 🍽️
 
 A modern, elegant, and fully responsive single-page website template built for restaurants, cafes, and culinary hubs. This landing page features a sleek design with smooth navigation, beautiful imagery overlays, and interactive hover effects.
 
