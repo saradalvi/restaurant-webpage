@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <title>Document</title>
+     <style>
+    /* Start as transparent */
+    .navbar {
+      background-color: transparent !important;
+      transition: background-color 0.4s ease;
+    }
+    /* Solid black when scrolled */
+    .navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+  </style>
+</head>
+<body>
+   
+  <!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">=</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#carouselExampleCaptions">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light" href="#book" role="button">Book a table</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+  <!-- Slide 1 -->
+  <div class="carousel-item active">
+    <img src="r1.jpg" class="d-block w-100" style="height: 670px; object-fit: cover;" alt="Restaurant 1">
+    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+     <h5 style="font-family: 'Brush Script MT', cursive; color: rgb(255, 255, 255); font-size: 50px;">Welcome to Our Restaurant</h5>
+        <p>Experience the taste of perfection</p>
+      <div>
+        <a href="#menu" class="btn btn-outline-light">Menu</a>
+        <a href="#book" class="btn btn-outline-light">Book a Table</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="carousel-item">
+    <img src="r2.jpg" class="d-block w-100" style="height: 670px; object-fit: cover;" alt="Restaurant 2">
+    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+       <h5 style="font-family: 'Brush Script MT', cursive; color: rgb(255, 255, 255); font-size: 50px;">Fresh Ingredients</h5>
+        <p>Only the best for our customers</p>
+      <div>
+       <a href="#menu" class="btn btn-outline-light">Menu</a>
+        <a href="#book" class="btn btn-outline-light">Book a Table</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="carousel-item">
+    <img src="r3.jpg" class="d-block w-100" style="height: 670px; object-fit: cover;" alt="Restaurant 3">
+    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+         <h5 style="font-family: 'Brush Script MT', cursive; color: rgb(255, 255, 255); font-size: 50px;">Delicious Recipes</h5>
+        <p>Made with love and passion</p>
+      <div>
+     <a href="#menu" class="btn btn-outline-light">Menu</a>
+        <a href="#book" class="btn btn-outline-light">Book a Table</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- About Section -->
+<section class="about-section py-5" style="background: url('project1Restaurant/about-bg.jpg') center/cover no-repeat; position: relative;" id="about">
+    <div style="background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+    <div class="container position-relative text-center text-white">
+        
+        <div class="mb-4">
+            <span class="d-block"  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">About</span>
+            <h2 style="font-size: 36px; font-weight: bold; font-style: italic; margin-bottom: 20px;">Our Restaurant</h2>
+        </div>
+
+        <p style="max-width: 800px; margin: 0 auto; font-size: 18px; line-height: 1.8;">
+            Welcome to <strong>StreetSupply Hub Restaurant</strong>, where passion meets flavor. 
+            We believe that food is more than just a meal — it’s an experience that brings people together. 
+            From sizzling starters to indulgent desserts, every dish we serve is crafted with the freshest 
+            ingredients, authentic recipes, and a dash of creativity.
+        </p>
+        <p style="max-width: 800px; margin: 20px auto 0; font-size: 18px; line-height: 1.8;">
+            Our chefs pour their heart into every plate, blending tradition with innovation to offer a dining 
+            experience that satisfies every craving. Whether you’re here for a quick bite, a family dinner, or 
+            a celebration, we promise warm hospitality, cozy ambiance, and flavors you’ll remember long after 
+            your last bite. Step in, relax, and let us serve you food made with love.
+        </p>
+
+        
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Services Section -->
+<section class="py-5" style="background: url('r2.jpg') center/cover no-repeat; position: relative;">
+  <div style="background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+  
+  <div class="container position-relative text-center text-white">
+    <!-- Section Heading -->
+    <div class="mb-5">
+      <span class="d-block fst-italic fs-3"  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Services</span>
+      <h2 class="fw-bold fst-italic mb-4">Our Special Events</h2>
+    </div>
+
+    <!-- Services Row -->
+    <div class="row g-4">
+      
+      <!-- Birthday Party -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white border-0 service-card">
+          <img src="s1.jpg" class="card-img" alt="Birthday Party">
+          <div class="card-img-overlay d-flex flex-column justify-content-start">
+            <h4 class="bg-dark bg-opacity-50 px-3 py-1 rounded"  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Birthday Party</h4>
+          </div>
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+            <p>Celebrate your special day with us! From cakes to decor, we make every birthday magical.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Meeting -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white border-0 service-card">
+          <img src="s2.jpg" class="card-img" alt="Business Meeting">
+          <div class="card-img-overlay d-flex flex-column justify-content-start">
+            <h4 class="bg-dark bg-opacity-50 px-3 py-1 rounded"  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Business Meeting</h4>
+          </div>
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+            <p>Host your meetings in a quiet, professional space with top-quality dining options.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wedding Party -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white border-0 service-card">
+          <img src="s3.jpg" class="card-img" alt="Wedding Party">
+          <div class="card-img-overlay d-flex flex-column justify-content-start">
+            <h4 class="bg-dark bg-opacity-50 px-3 py-1 rounded"  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Wedding Party</h4>
+          </div>
+          <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+            <p>Make your big day unforgettable with our luxurious venue and exquisite catering.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.service-card img {
+  transition: transform 0.5s ease;
+  height: 250px;
+  object-fit: cover;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-card:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+
+
+
+
+
+<!-- Menu Section -->
+<section class="py-5" style="background-color:#575151;" id="menu">
+    <div class="container text-center">
+        <!-- Section Title -->
+        <span class="d-block mb-2"  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Specialties</span>
+        <h2 class="fw-bold mb-5">Our Menu</h2>
+
+        <div class="row">
+            <!-- Breakfast Column -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-4">Breakfast</h4>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="b1.jpg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Grilled Beef with Potatoes</h6>
+                            <small class="text-muted">Meat, Potatoes, Rice, Tomato</small>
+                        </div>
+                        <div class="fw-bold ms-3">$29</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="b2.jpg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Pancakes with Syrup</h6>
+                            <small class="text-muted">Fluffy, Sweet, Maple</small>
+                        </div>
+                        <div class="fw-bold ms-3">$15</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="b3.jpeg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Omelette with Veggies</h6>
+                            <small class="text-muted">Eggs, Spinach, Peppers</small>
+                        </div>
+                        <div class="fw-bold ms-3">$18</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="b4.jpg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Avocado Toast</h6>
+                            <small class="text-muted">Bread, Avocado, Olive Oil</small>
+                        </div>
+                        <div class="fw-bold ms-3">$20</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch Column -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-4">Lunch</h4>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="l1.jpg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Grilled Salmon</h6>
+                            <small class="text-muted">Salmon, Lemon, Herbs</small>
+                        </div>
+                        <div class="fw-bold ms-3">$35</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="l2.jpg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Chicken Caesar Salad</h6>
+                            <small class="text-muted">Lettuce, Chicken, Parmesan</small>
+                        </div>
+                        <div class="fw-bold ms-3">$22</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="l3.jpg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Spaghetti Carbonara</h6>
+                            <small class="text-muted">Pasta, Bacon, Cream</small>
+                        </div>
+                        <div class="fw-bold ms-3">$25</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="l4.jpg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Veggie Burger</h6>
+                            <small class="text-muted">Beans, Lettuce, Tomato</small>
+                        </div>
+                        <div class="fw-bold ms-3">$20</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner Column -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-4">Dinner</h4>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d1.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Steak with Veggies</h6>
+                            <small class="text-muted">Beef, Broccoli, Carrots</small>
+                        </div>
+                        <div class="fw-bold ms-3">$40</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d2.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Shrimp Alfredo</h6>
+                            <small class="text-muted">Shrimp, Pasta, Cream</small>
+                        </div>
+                        <div class="fw-bold ms-3">$38</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d3.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Lamb Chops</h6>
+                            <small class="text-muted">Lamb, Rosemary, Garlic</small>
+                        </div>
+                        <div class="fw-bold ms-3">$45</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d4.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Grilled Lobster</h6>
+                            <small class="text-muted">Lobster, Garlic Butter</small>
+                        </div>
+                        <div class="fw-bold ms-3">$50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Menu Section -->
+<section class="py-5" style="background-color: #575151;;">
+    <div class="container text-center">
+
+        <div class="row">
+            <!-- Breakfast Column -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-4">Desserts</h4>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="dd1.jpg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Chocolate Lava Cake</h6>
+                            <small class="text-muted">Rich chocolate sponge with molten cocoa center</small>
+                        </div>
+                        <div class="fw-bold ms-3">$29</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="dd2.jpg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Strawberry Cheesecake </h6>
+                            <small class="text-muted"> Cream cheese, fresh strawberries, buttery biscuit base</small>
+                        </div>
+                        <div class="fw-bold ms-3">$15</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="dd3.jpg" class="rounded-circle me-3" width="70" height="70" alt="Breakfast">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Tiramisu </h6>
+                            <small class="text-muted"> Coffee-soaked sponge with mascarpone cream and cocoa dusting</small>
+                        </div>
+                        <div class="fw-bold ms-3">$18</div>
+                    </div>
+                </div>
+
+             
+            </div>
+
+            <!-- ice cream Column -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-4">Ice-Cream</h4>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="i1.jpeg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Vanilla Bean</h6>
+                            <small class="text-muted">Fresh cream, vanilla extract, and sugar</small>
+                        </div>
+                        <div class="fw-bold ms-3">$35</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="i2.jpg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Chocolate Fudge</h6>
+                            <small class="text-muted"> Cocoa, chocolate chips, and cream</small>
+                        </div>
+                        <div class="fw-bold ms-3">$22</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="i3.jpg" class="rounded-circle me-3" width="70" height="70" alt="Lunch">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Mango Delight</h6>
+                            <small class="text-muted"> Ripe mango puree with milk and sugar</small>
+                        </div>
+                        <div class="fw-bold ms-3">$25</div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Dinner Column -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-4">Drinks</h4>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d1.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Steak with Veggies</h6>
+                            <small class="text-muted">Beef, Broccoli, Carrots</small>
+                        </div>
+                        <div class="fw-bold ms-3">$40</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d2.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Shrimp Alfredo</h6>
+                            <small class="text-muted">Shrimp, Pasta, Cream</small>
+                        </div>
+                        <div class="fw-bold ms-3">$38</div>
+                    </div>
+                </div>
+
+                <div class="menu-item card border-0 shadow-sm mb-3 p-2">
+                    <div class="d-flex align-items-center">
+                        <img src="d3.jpg" class="rounded-circle me-3" width="70" height="70" alt="Dinner">
+                        <div class="text-start flex-grow-1">
+                            <h6 class="mb-0">Lamb Chops</h6>
+                            <small class="text-muted">Lamb, Rosemary, Garlic</small>
+                        </div>
+                        <div class="fw-bold ms-3">$45</div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    .menu-item {
+        transition: all 0.3s ease;
+    }
+    .menu-item:hover {
+        background-color: #f8d210 !important;
+        color: #000 !important;
+    }
+    .menu-item:hover h6, 
+    .menu-item:hover small, 
+    .menu-item:hover .fw-bold {
+        color: #000 !important;
+    }
+</style>
+
+
+
+
+
+<!-- Reservation Section -->
+<section id="book" class="py-5" style="background-color: #5f5e5e; background-image: url(r4.jpg);" >
+  <div class="container">
+    <div class="text-center mb-5">
+      <span  style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Book a Table</span>
+      <h2 style="font-size: 36px; font-weight: bold; color: #ffffff;">Make Reservation</h2>
+    </div>
+
+    <form class="row g-4 p-4 shadow rounded bg-grey" style="max-width: 900px; margin: auto;">
+      <!-- Name -->
+      <div class="col-md-6">
+        <label class="form-label fw-bold " style="color: #ffffff;">Name</label>
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6">
+        <label class="form-label fw-bold" style="color: #ffffff;">Email</label>
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-6">
+        <label class="form-label fw-bold" style="color: #ffffff;">Phone</label>
+        <input type="tel" class="form-control" placeholder="Phone" required>
+      </div>
+
+      <!-- Date -->
+      <div class="col-md-6">
+        <label class="form-label fw-bold" style="color: #ffffff;">Date</label>
+        <input type="date" class="form-control" required>
+      </div>
+
+      <!-- Time -->
+      <div class="col-md-6">
+        <label class="form-label fw-bold" style="color: #ffffff;">Time</label>
+        <input type="time" class="form-control" required>
+      </div>
+
+      <!-- Person -->
+      <div class="col-md-6">
+        <label class="form-label fw-bold" style="color: #ffffff;">Person</label>
+        <select class="form-select" required>
+          <option value="">Select</option>
+          <option>1 Person</option>
+          <option>2 People</option>
+          <option>3 People</option>
+          <option>4 People</option>
+          <option>5+ People</option>
+        </select>
+      </div>
+
+      <!-- Button -->
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-warning px-5 py-2 fw-bold" style="font-size: 18px;">
+          Make a Reservation
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+<!-- chef section -->
+
+<section class="py-5 text-center" style="background-color: #575151;">
+  <div class="container">
+    <h2 class="mb-5">
+      <span style="font-family: 'Brush Script MT', cursive; color: orange; font-size: 50px;">Chef</span>
+      <br>
+      <strong>Our Master Chef</strong>
+    </h2>
+    <div class="row">
+
+     <style>
+  .chef-img {
+    height: 300px; /* set same height for all */
+    object-fit: cover; /* crop instead of stretch */
+  }
+</style>
+
+<!-- Chef 1 -->
+<div class="col-md-3 mb-4">
+  <div class="card border-0 shadow-sm">
+    <img src="c1.jpg" class="card-img-top chef-img" alt="Chef John Smooth">
+    <div class="card-body text-center">
+      <h5 class="card-title fw-bold">John Smooth</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Chef 2 -->
+<div class="col-md-3 mb-4">
+  <div class="card border-0 shadow-sm">
+    <img src="c2.jpg" class="card-img-top chef-img" alt="Chef Rebeca Welson">
+    <div class="card-body text-center">
+      <h5 class="card-title fw-bold">Rebeca Welson</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Chef 3 -->
+<div class="col-md-3 mb-4">
+  <div class="card border-0 shadow-sm">
+    <img src="c3.jpg" class="card-img-top chef-img" alt="Chef Kharl Branyt">
+    <div class="card-body text-center">
+      <h5 class="card-title fw-bold">Kharl Branyt</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Chef 4 -->
+<div class="col-md-3 mb-4">
+  <div class="card border-0 shadow-sm">
+    <img src="c4.jpg" class="card-img-top chef-img" alt="Chef Luke Simon">
+    <div class="card-body text-center">
+      <h5 class="card-title fw-bold">Luke Simon</h5>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- customer section -->
+
+<section class="py-5 bg-light" style="background-image: url(r2.jpg);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #ffffff;">Happy Customer</h2>
+    </div>
+    <div class="row justify-content-center text-center">
+      
+      <!-- Testimonial 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-#575151 rounded shadow-sm h-100">
+          <div class="position-relative d-inline-block mb-3">
+            <img src="p1.jpg" class="rounded-circle border" alt="Customer 1" width="120" height="120" style="object-fit: cover;">
+              <i class="bi bi-quote"></i>
+            </span>
+          </div>
+          <p class="text-muted bg-light" >
+            "The food was absolutely delicious, and the service was top-notch. I’ll definitely be ordering again!"
+          </p>
+          <h6 class="fw-bold" style="color: #ffffff;">Ian Boner</h6>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-grey rounded shadow-sm h-100">
+          <div class="position-relative d-inline-block mb-3">
+            <img src="p2.jpg" class="rounded-circle border" alt="Customer 2" width="120" height="120" style="object-fit: cover;">
+              <i class="bi bi-quote"></i>
+            </span>
+          </div>
+          <p class="text-muted bg-light"  >
+          "Loved the variety on the menu. Everything was fresh and perfectly cooked. Highly recommended!"
+          </p>
+          <h6 class="fw-bold" style="color:white;">Jason McClean</h6>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-grey rounded shadow-sm h-100">
+          <div class="position-relative d-inline-block mb-3">
+            <img src="p3.jpg" class="rounded-circle border" alt="Customer 3" width="120" height="120" style="object-fit: cover;">
+              <i class="bi bi-quote"></i>
+            </span>
+          </div>
+          <p class="text-muted bg-light" >
+          "Quick delivery, friendly staff, and the taste was out of this world. Five stars from me!"
+          </p>
+          <h6 class="fw-bold" style="color:white;">Mark Stevenson</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-5 " style="background-color: #575151;" >
+  <div class="container-fluid p-0">
+    <div class="row g-0"> <!-- g-0 removes Bootstrap gutter space -->
+
+      <div class="col-3">
+        <img src="a1.jpg" class="img-fluid w-100" alt="Image 1" style="  height: 250px; object-fit: cover; display: block;">
+      </div>
+
+      <div class="col-3">
+        <img src="a2.jpg" class="img-fluid w-100" alt="Image 2" style="  height: 250px;  object-fit: cover;display: block;">
+      </div>
+
+      <div class="col-3">
+        <img src="a3.jpg" class="img-fluid w-100" alt="Image 3" style="  height: 250px; object-fit: cover; display: block;">
+      </div>
+
+      <div class="col-3">
+        <img src="a4.jpg" class="img-fluid w-100" alt="Image 4" style="  height: 250px; object-fit: cover; display: block;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- final section -->
+
+<section class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Appetizer -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Appetizer</h5>
+        <p class="small">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <div>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Open Hours -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Open Hours</h5>
+        <ul class="list-unstyled small">
+          <li>Monday <span class="float-end">9:00 - 24:00</span></li>
+          <li>Tuesday <span class="float-end">9:00 - 24:00</span></li>
+          <li>Wednesday <span class="float-end">9:00 - 24:00</span></li>
+          <li>Thursday <span class="float-end">9:00 - 24:00</span></li>
+          <li>Friday <span class="float-end">9:00 - 02:00</span></li>
+          <li>Saturday <span class="float-end">9:00 - 02:00</span></li>
+          <li>Sunday <span class="float-end">9:00 - 02:00</span></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Newsletter</h5>
+        <p class="small">Far far away, behind the word mountains, far from the countries.</p>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="Enter email address">
+          </div>
+          <button class="btn btn-warning w-100">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Instagram -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Instagram</h5>
+        <div class="row g-2">
+          <div class="col-4"><img src="a1.jpg" class="img-fluid rounded" alt=""></div>
+          <div class="col-4"><img src="a2.jpg" class="img-fluid rounded" alt=""></div>
+          <div class="col-4"><img src="a3.jpg" class="img-fluid rounded" alt=""></div>
+          <div class="col-4"><img src="a4.jpg" class="img-fluid rounded" alt=""></div>
+          <div class="col-4"><img src="d2.jpg" class="img-fluid rounded" alt=""></div>
+          <div class="col-4"><img src="d4.jpg" class="img-fluid rounded" alt=""></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center small mt-4">
+      <p class="mb-0">Copyright &copy;2025 All rights reserved<i class="bi bi-heart-fill text-danger"></i> </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+</body>
+</html>
